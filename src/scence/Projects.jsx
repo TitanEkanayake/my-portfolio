@@ -47,7 +47,7 @@ const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transit
 
 const Projects = () => {
   return (
-    <section id="projects" className="pt-48 pb-48">
+    <section id="projects" className="pt-28 pb-48">
         {/* {Headings} */}
         <motion.div
         className="md:w-2/4 mx-auto text-center"
