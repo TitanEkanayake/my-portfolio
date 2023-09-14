@@ -1,8 +1,9 @@
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
-import menuIcon from "../assets/menu-icon.svg"
-import closeIcon from "../assets/close-icon.svg"
+import menuIcon from "../assets/menu-icon.svg";
+import closeIcon from "../assets/close-icon.svg";
+import { motion } from "framer-motion";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
     const lowerCasePage = page.toLowerCase();
@@ -67,7 +68,17 @@ const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}) => {
                 )}
                 {/* {Mobile Menu Popup} */}
                 {!isDesktop && isMenuToggled && (
-                <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+                <motion.div 
+                className="fixed right-0 bottom-0 h-full bg-blue w-[300px] z-40 drop-shadow-xl"
+                initial="hidden" 
+                whileInView='visible' 
+                viewport={{once: true,amount:0.5}} 
+                transition={{duration:0.5}}
+                variants={{
+                hidden:{opacity:0,x: 50},
+                visible:{opacity:1,x:0},
+                }}
+                >
                     {/* CLOSE ICON */}
                     <div className="flex justify-end p-12">
                     <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -103,7 +114,7 @@ const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}) => {
                             setSelectedPage={setSelectedPage}
                         />
                     </div>
-                  </div>
+                  </motion.div>
                 )}
             </div>
         </nav>
