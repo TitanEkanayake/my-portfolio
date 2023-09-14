@@ -68,7 +68,7 @@ const Projects = () => {
             <LineGradient width="w-1/3" />
             </div>
             <p className="mt-10 mb-10">
-                Skills And Experience that i gained through this years.
+            Explore a showcase of my portfolio projects, where I've applied my skills and expertise to create innovative solutions. Discover a diverse range of projects that highlight my technical abilities and creativity.
             </p>
         </motion.div>
         {/* {Projects} */}

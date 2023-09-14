@@ -26,7 +26,7 @@ const MySkills = () => {
                 </p>
                 <LineGradient width="w-1/3" />
                 <p className="mt-10 mb-7">
-                    Skills And Experience that i gained through this years.
+                Explore my journey, qualifications, and skills—a glimpse into my professional growth and capabilities.
                 </p>
             </motion.div>
 
