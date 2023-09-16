@@ -1,7 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import contactImage from"../assets/contact-image.jpeg"
+import contactImage from "../assets/contact-image.jpeg";
 
 const Contact = () => {
   const {
@@ -16,10 +16,10 @@ const Contact = () => {
     if (!isValid) {
       e.preventDefault();
     }
-  }
+  };
   return (
     <section id="contact" className="contact py-48">
-        {/* HEADINGS */}
+      {/* HEADINGS */}
       <motion.div
         initial="hidden"
         whileInView="visible"

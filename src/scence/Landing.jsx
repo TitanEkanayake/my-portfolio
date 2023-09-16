@@ -19,7 +19,7 @@ const Landing = ({ setSelectedPage }) => {
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
-              alt='profile'
+              alt="profile"
               className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full
                             max-w-[400px] md:max-w-[600px] p-5"
               src={profileImage}
@@ -45,7 +45,8 @@ const Landing = ({ setSelectedPage }) => {
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
-          }}>
+          }}
+        >
           <p className="text-5xl font-playfair z-10 text-center md:text-start">
             Titan {""}
             <span
@@ -57,9 +58,14 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            I am an energetic, self-motivated individual with a strong foundation in software engineering principles. Through my skillss, I have gained valuable insights into industry-specific challenges using various programming languages. Known for my trustworthiness, responsibility, and hardworking nature, 
-            I possess exceptional interpersonal skills and thrive in collaborative environments. 
-            I am constantly seeking new opportunities in the software engineering field to expand my knowledge and contribute to impactful projects.
+            I am an energetic, self-motivated individual with a strong
+            foundation in software engineering principles. Through my skillss, I
+            have gained valuable insights into industry-specific challenges
+            using various programming languages. Known for my trustworthiness,
+            responsibility, and hardworking nature, I possess exceptional
+            interpersonal skills and thrive in collaborative environments. I am
+            constantly seeking new opportunities in the software engineering
+            field to expand my knowledge and contribute to impactful projects.
           </p>
         </motion.div>
 
