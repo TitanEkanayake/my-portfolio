@@ -59,7 +59,7 @@ const Landing = ({ setSelectedPage }) => {
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
             I am an energetic, self-motivated individual with a strong
-            foundation in software engineering principles. Through my skillss, I
+            foundation in software engineering principles. Through my skills, I
             have gained valuable insights into industry-specific challenges
             using various programming languages. Known for my trustworthiness,
             responsibility, and hardworking nature, I possess exceptional
