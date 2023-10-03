@@ -165,7 +165,7 @@ const MySkills = () => {
               <h2 className="text-xl font-playfair font-semibold">Languages</h2>
               <li className="mt-5">Python</li>
               <li>Scala</li>
-              <li>Java</li>
+              <li>JavaScript</li>
               <li>HTML/CSS</li>
               <li>TypeScript</li>
               <li>SQL</li>

@@ -32,7 +32,7 @@ const References = () => {
       {/* REFERENCES */}
       <div className="md:flex md:justify-between gap-8">
         <motion.div
-          className={`bg-red ${referenceStyles} before:content-person1 rounded-lg`}
+          className={`bg-blue ${referenceStyles} before:content-person1 rounded-lg`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -42,13 +42,13 @@ const References = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-2xl">Thilini Bogahawaththa</p>
+          {/* <p className="font-playfair text-6xl">“</p> */}
+          <p className="text-center text-2xl">Deepal Sriyantha</p>
           <p className="text-center text-1xl">
-            Senior Software Engineer at London Stock Exchnage Group.
+            Associate Software Architect at LSEG Technology.
           </p>
-          <p className="text-center text-xl">070 127 4183</p>
-          <p className="text-center text-xl">thilini.bogahawaththa@gmail.com</p>
+          <p className="text-center text-xl">+94 71 817 5045</p>
+          <p className="text-center text-xl">Deepal.desilva@lseg.com</p>
         </motion.div>
 
         <motion.div
@@ -67,7 +67,7 @@ const References = () => {
           <p className="text-center text-1xl">
             Staff Software Engineer at M-DAQ Global.
           </p>
-          <p className="text-center text-xl">071 154 9042</p>
+          <p className="text-center text-xl">+94 71 154 9042</p>
           <p className="text-center text-xl">thranasingha@gmail.com</p>
         </motion.div>
 
