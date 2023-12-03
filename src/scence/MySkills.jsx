@@ -23,7 +23,7 @@ const MySkills = () => {
           }}
         >
           <p className="font-playfair font-semibold text-4xl mb-5">
-            MY <span className="text-red">EXPERIENCE , EDUCATION</span> AND{" "}
+            MY <span className="text-red">EDUCATION,EXPERIENCE</span> AND{" "}
             <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
@@ -46,64 +46,7 @@ const MySkills = () => {
           )}
         </div>
       </div>
-      {/* SKILLS */}
       <div className="md:flex md:justify-between mt-16 gap-32 display-flex flex-wrap-wrap  ">
-        {/* EXPERIENCE */}
-        <motion.div
-          className="md:w-1/3 mt-10 flex-grow-1 flex-basis-200"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
-          <div className="relative h-32">
-            <div className="z-10">
-              {/* <p className="font-playfair font-semibold text-4xl">01</p> */}
-              <p className="font-playfair font-semibold text-3xl mt-1">
-                EXPERIENCE
-                <LineGradient width="w-1/3" />
-              </p>
-              <p className="font-playfair font-semibold text-1xl mt-1">
-                INTERN ENGINEER,
-                <br />
-                LSEG
-              </p>
-              <p className="font-playfair font-semibold text-1xl mt-1">
-                AUGUST 2022 –AUGUST 2023
-              </p>
-            </div>
-            {/* <div className="w-5/12  h-32 absolute top-0 z-[-1] flex justify-center items-center rounded-lg right-0">
-                <img
-                    alt="skills"
-                    className="z-10 "
-                    src={companyLogo}
-                />
-            </div> */}
-          </div>
-          <p className="mt-5">
-            Worked in Foreign Exchange Surveillance project aimed at developing
-            market manipulations.
-          </p>
-          <p className="mt-5 text-sm">
-            <li className="mt-5">
-              Developed and implemented new client-required features for market
-              manipulation detection algorithms using Scala and C++.
-            </li>
-            <li className="mt-5">Developed automation scripts using Python.</li>
-            <li className="mt-5">
-              Conducted testing on market manipulation algorithm performance
-              with production rates.
-            </li>
-            <li className="mt-5">
-              Developed unit test implementations for market manipulation
-              algorithms.
-            </li>
-          </p>
-        </motion.div>
         {/* EDUCATION */}
         <motion.div
           className="md:w-1/3 mt-10 flex-grow-1 flex-basis-200"
@@ -137,7 +80,54 @@ const MySkills = () => {
             </div>
           </div>
         </motion.div>
-        <br />
+        {/* EXPERIENCE */}
+        <motion.div
+          className="md:w-1/3 mt-10 flex-grow-1 flex-basis-200"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <div className="relative h-32">
+            <div className="z-10">
+              {/* <p className="font-playfair font-semibold text-4xl">01</p> */}
+              <p className="font-playfair font-semibold text-3xl mt-1">
+                EXPERIENCE
+                <LineGradient width="w-1/3" />
+              </p>
+              <p className="font-playfair font-semibold text-1xl mt-1">
+                INTERN ENGINEER,
+                <br />
+                LSEG
+              </p>
+              <p className="font-playfair font-semibold text-1xl mt-1">
+                AUGUST 2022 –AUGUST 2023
+              </p>
+            </div>
+          </div>
+          <p className="mt-5">
+            Worked in Foreign Exchange Surveillance project aimed at developing
+            market manipulations.
+          </p>
+          <p className="mt-5 text-sm">
+            <li className="mt-5">
+              Developed and implemented new client-required features for market
+              manipulation detection algorithms. [Scala | Python | C++]
+            </li>
+            <li className="mt-5">Automation Script development. [Python]</li>
+            <li className="mt-5">
+              Performance tests in market manipulation algorithms with
+              production rates. [Confluence | JIRA]
+            </li>
+            <li className="mt-5">
+              Unit test implementations for manipulation algorithms. [Scala]
+            </li>
+          </p>
+        </motion.div>
         {/* Skills */}
         <motion.div
           className="md:w-1/3 mt-0 flex-grow-1 flex-basis-200"
@@ -153,40 +143,49 @@ const MySkills = () => {
           <div className="relative h-32 mt-10">
             <div className="z-10">
               <p className="font-playfair font-semibold text-3xl mt-0 mr-(-10)">
-                Skills <br />
-                And
-                <br />
-                Frameworks <LineGradient width="w-1/3" />
+                Skills <LineGradient width="w-1/3" />
               </p>
             </div>
-          </div>
-          <div className="flex justify-between">
-            <div className="w-1/3 p-4">
-              <h2 className="text-xl font-playfair font-semibold">Languages</h2>
-              <li className="mt-5">Python</li>
-              <li>Scala</li>
-              <li>JavaScript</li>
-              <li>HTML/CSS</li>
-              <li>TypeScript</li>
-              <li>SQL</li>
-              <li>C++</li>
-            </div>
-            <div className="w-1/3 p-4">
-              <h2 className="text-xl font-playfair font-semibold">
-                Libraries
-                <br />
-                /Frameworks
-              </h2>
-              <li className="mt-5">QT</li>
-              <li>React</li>
-              <li>Bootstrap</li>
-              <li>ASP.NET Core</li>
-            </div>
-            <div className="w-1/3 p-4">
-              <h2 className="text-xl font-playfair font-semibold">Tools</h2>
-              <li className="mt-5">Linux</li>
-              <li>Git</li>
-              <li>JIRA</li>
+
+            <div className="flex justify-between">
+              <div className="w-1/3 p-4">
+                <h2 className="text-xl font-playfair font-semibold">
+                  Web Development
+                </h2>
+                <p className="mt-5 text-sm">
+                  <li className="mt-5">
+                    React | REDUX | Node Js Express API | .Net REST API C# |
+                    JavaScript | HTML | CSS
+                  </li>
+                </p>
+              </div>
+              <div className="w-1/3 p-4">
+                <h2 className="text-xl font-playfair font-semibold">
+                  Programming Languages
+                </h2>
+                <p className="mt-5 text-sm">
+                  <li className="mt-5">Java | Python | Scala | C++ | C#</li>
+                </p>
+              </div>
+              <div className="w-1/3 p-4">
+                <h2 className="text-xl font-playfair font-semibold">
+                  Automation & Algorithm Development
+                </h2>
+                <p className="mt-5 text-sm">
+                  <li className="mt-5">
+                    Python Script | Scala market manipulation algorithm
+                    development
+                  </li>
+                </p>
+              </div>
+              <div className="w-1/3 p-4">
+                <h2 className="text-xl font-playfair font-semibold">Tools</h2>
+                <p className="mt-5 text-sm">
+                  <li className="mt-5">
+                    VC Code | GIT | Jenkins | JIRA | QT |Intellij
+                  </li>
+                </p>
+              </div>
             </div>
           </div>
         </motion.div>

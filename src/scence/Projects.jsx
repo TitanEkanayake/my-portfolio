@@ -1,12 +1,10 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-import project1 from "../assets/project-1.jpeg";
-import project2 from "../assets/project-2.jpeg";
-import project3 from "../assets/project-3.jpeg";
-import project4 from "../assets/project-4.jpeg";
-// import project5 from "../assets/project-5.jpeg"
-// import project6 from "../assets/project-6.jpeg"
-// import project7 from "../assets/project-7.jpeg"
+import project1 from "../assets/project-1.jpg";
+import project2 from "../assets/project-2.jpg";
+import project3 from "../assets/project-3.jpg";
+import project4 from "../assets/project-4.jpg";
+
 import { FaGithub } from "react-icons/fa";
 const container = {
   hidden: {},
@@ -89,36 +87,7 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <motion.div variants={projectVariant} className="relative">
-            <div className={overlayStyles}>
-              <p className="text-2xl font-playfair md:text-1xl">
-                Gym Application
-              </p>
-              <p className="mt-7 md:mt-7">
-                A comprehensive Fitness Application using a tech stack that
-                includes ReactJS, TypeScript, Vite, Tailwind CSS.
-              </p>
-              <FaGithub className="pt-1" size={30} />
-              <a
-                className="text-1xl "
-                href="https://github.com/TitanEkanayake/GyM-TypeScript"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <span>View on GitHub</span>
-              </a>
-              🚀
-              <a
-                className="text-1xl "
-                href="http://gym-typescript-adr.pages.dev"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <span>Launch</span>
-              </a>
-            </div>
-            <img src={project1} alt="project1" />
-          </motion.div>
+
           <motion.div variants={projectVariant} className="relative">
             <div className={overlayStyles}>
               <p className="text-2xl font-playfair md:text-1xl">
@@ -138,56 +107,63 @@ const Projects = () => {
                 <span>View on GitHub</span>
               </a>
             </div>
-            <img src={project2} alt="project2" />
+            <img src={project1} alt="project1" />
           </motion.div>
-
-          {/* ROW 2 */}
-          {/* <motion.div variants={projectVariant} className="relative">
-            <div className={overlayStyles}>
-                <p className="text-2xl font-playfair md:text-1xl">Heloo</p>
-                <p className="mt-7 md:mt-7">
-                Curabitur arcu erat, accumsan id imperdiet et
-                </p>
-            </div>
-            <img src={project3} alt="project3" />
-        </motion.div>
-        <motion.div variants={projectVariant} className="relative">
-            <div className={overlayStyles}>
-                <p className="text-2xl font-playfair md:text-1xl">Heloo</p>
-                <p className="mt-7 md:mt-7">
-                Curabitur arcu erat, accumsan id imperdiet et
-                </p>
-            </div>
-            <img src={project4} alt="project4" />
-        </motion.div>
-        <motion.div variants={projectVariant} className="relative">
-            <div className={overlayStyles}>
-                <p className="text-2xl font-playfair md:text-1xl">Heloo</p>
-                <p className="mt-7 md:mt-7">
-                Curabitur arcu erat, accumsan id imperdiet et
-                </p>
-            </div>
-            <img src={project5} alt="project5" />
-        </motion.div> */}
-
-          {/* ROW 3 */}
           <motion.div variants={projectVariant} className="relative">
-            <div className={overlayStyles}>
-              <p className="text-2xl font-playfair md:text-1xl">
+            <div className={overlayStyles} relative>
+              <p className="text-2xl font-playfair md:text-1xl relative">
                 Customer Management System
               </p>
-              <p className="mt-7 md:mt-7">
-                Created a Customer management system using Qt library from C++
-                language.
+              <p className="mt-7 md:mt-7 relative">
+                Web application which helps users to manage customers
+                [React|REDUX|Tailwind CSS|Node Js Express API]
               </p>
               <FaGithub className="pt-1" size={30} />
               <a
                 className="text-1xl "
-                href="https://github.com/TitanEkanayake/Cutomer-Management-System"
+                href="https://github.com/TitanEkanayake/React-Redux-CURD.git"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span>View on GitHub</span>
+              </a>
+              {/* 🚀
+              <a
+                className="text-1xl "
+                href="http://gym-typescript-adr.pages.dev"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span>Launch</span>
+              </a> */}
+            </div>
+            <img src={project2} alt="project2" />
+          </motion.div>
+          <motion.div variants={projectVariant} className="relative">
+            <div className={overlayStyles}>
+              <p className="text-2xl font-playfair md:text-1xl">
+                Todo Application
+              </p>
+              <p className="mt-7 md:mt-7 relative">
+                Todo application with CURD functionalities.[React |REDUX|.Net
+                API | SQLite]
+              </p>
+              <FaGithub className="pt-1" size={30} />
+              <a
+                className="text-1xl "
+                href="https://github.com/TitanEkanayake/Todo-App.git"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span>Check FrontEnd code on GitHub</span>
+              </a>
+              <a
+                className="text-1xl "
+                href="https://github.com/TitanEkanayake/.Net-SQLite-database-API.git"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span>Check API code on GitHub</span>
               </a>
             </div>
             <img src={project3} alt="project3" />
@@ -197,7 +173,7 @@ const Projects = () => {
               <p className="text-2xl font-playfair md:text-1xl">
                 Messenger-Application
               </p>
-              <p className="mt-7 md:mt-7">
+              <p className="mt-7 md:mt-7 relative">
                 Developed a distributed Messenger Application using ReactJS and
                 C# Languages.
               </p>
