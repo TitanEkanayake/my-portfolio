@@ -128,8 +128,52 @@ const MySkills = () => {
             </li>
           </p>
         </motion.div>
-        {/* Skills */}
+        {/* Certifications */}
         <motion.div
+          className="md:w-1/3 mt-10 flex-grow-1 flex-basis-200"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <div className="relative h-32 mb-20 left-13">
+            <div className="z-10 ">
+              <p className="font-playfair font-semibold text-3xl mt-1">
+                CERTIFICATIONS <LineGradient width="w-1/3" />
+              </p>
+
+              <li className="font-playfair font-semibold text-1xl mt-5">
+                Open Day Exhibition under the theme of 'Smart Sri Lanka'
+                <br />
+                Won 1st place for the project we implemented, The 'Choon Paan
+                Application,' which serves online bakery sellers User Interface
+                using ReactJs.
+              </li>
+              <li className="font-playfair font-semibold text-1xl mt-5 mb-0">
+                Complete JavaScript Course Offered by Udemy
+                <br />
+                [August/2023 - November/2023]
+              </li>
+
+              <li className="font-playfair font-semibold text-1xl mt-5 mb-0">
+                Introduction to python Programming Offered by Coursera
+                <br />
+                [December/2023 - January/2024]
+              </li>
+              <li className="font-playfair font-semibold text-1xl mt-5 mb-0">
+                Google IT Automation with Python
+                <br />
+                [January/2024 - Present]
+              </li>
+            </div>
+          </div>
+        </motion.div>
+        {/* Skills */}
+        {/* <motion.div
           className="md:w-1/3 mt-0 flex-grow-1 flex-basis-200"
           initial="hidden"
           whileInView="visible"
@@ -188,7 +232,7 @@ const MySkills = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

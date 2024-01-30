@@ -4,7 +4,6 @@ import project1 from "../assets/project-1.jpg";
 import project2 from "../assets/project-2.jpg";
 import project3 from "../assets/project-3.jpg";
 import project4 from "../assets/project-4.jpg";
-
 import { FaGithub } from "react-icons/fa";
 const container = {
   hidden: {},
@@ -44,6 +43,9 @@ const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transit
 const Projects = () => {
   return (
     <section id="projects" className="pt-28 pb-48">
+      <div className="mt-10 mb-20">
+        <LineGradient />
+      </div>
       {/* {Headings} */}
       <motion.div
         className="md:w-2/4 mx-auto text-center"
@@ -90,16 +92,16 @@ const Projects = () => {
 
           <motion.div variants={projectVariant} className="relative">
             <div className={overlayStyles}>
-              <p className="text-2xl font-playfair md:text-1xl">
+              <p className="text-2xl font-playfair md:text-lg">
                 Reservation.LK
               </p>
-              <p className="mt-7 md:mt-7">
-                Created a web application called Reservation.LK using React Js
-                and firebase to help with future reservation services.
+              <p className="mt-3 md:mt-4 text-sm md:text-base">
+                Web application to help with future reservation services by
+                automating the system. [React Js | CSS | Firebase]
               </p>
               <FaGithub className="pt-1" size={30} />
               <a
-                className="text-1xl "
+                className="text-sm md:text-base"
                 href="https://github.com/TitanEkanayake/final-project"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -107,20 +109,20 @@ const Projects = () => {
                 <span>View on GitHub</span>
               </a>
             </div>
-            <img src={project1} alt="project1" />
+            <img className="w-full" src={project1} alt="project1" />
           </motion.div>
           <motion.div variants={projectVariant} className="relative">
             <div className={overlayStyles} relative>
-              <p className="text-2xl font-playfair md:text-1xl relative">
+              <p className="text-2xl font-playfair md:text-lg">
                 Customer Management System
               </p>
-              <p className="mt-7 md:mt-7 relative">
+              <p className="mt-3 md:mt-4 text-sm md:text-base">
                 Web application which helps users to manage customers
                 [React|REDUX|Tailwind CSS|Node Js Express API]
               </p>
               <FaGithub className="pt-1" size={30} />
               <a
-                className="text-1xl "
+                className="text-sm md:text-base"
                 href="https://github.com/TitanEkanayake/React-Redux-CURD.git"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -141,16 +143,16 @@ const Projects = () => {
           </motion.div>
           <motion.div variants={projectVariant} className="relative">
             <div className={overlayStyles}>
-              <p className="text-2xl font-playfair md:text-1xl">
+              <p className="text-2xl font-playfair md:text-lg">
                 Todo Application
               </p>
-              <p className="mt-7 md:mt-7 relative">
+              <p className="mt-3 md:mt-4 text-sm md:text-base">
                 Todo application with CURD functionalities.[React |REDUX|.Net
                 API | SQLite]
               </p>
               <FaGithub className="pt-1" size={30} />
               <a
-                className="text-1xl "
+                className="text-sm md:text-base"
                 href="https://github.com/TitanEkanayake/Todo-App.git"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -158,7 +160,7 @@ const Projects = () => {
                 <span>Check FrontEnd code on GitHub</span>
               </a>
               <a
-                className="text-1xl "
+                className="text-sm md:text-base"
                 href="https://github.com/TitanEkanayake/.Net-SQLite-database-API.git"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -170,16 +172,16 @@ const Projects = () => {
           </motion.div>
           <motion.div variants={projectVariant} className="relative">
             <div className={overlayStyles}>
-              <p className="text-2xl font-playfair md:text-1xl">
+              <p className="text-2xl font-playfair md:text-lg">
                 Messenger-Application
               </p>
-              <p className="mt-7 md:mt-7 relative">
+              <p className="mt-3 md:mt-4 text-sm md:text-base">
                 Developed a distributed Messenger Application using ReactJS and
                 C# Languages.
               </p>
               <FaGithub className="pt-1" size={30} />
               <a
-                className="text-1xl "
+                className="text-sm md:text-base"
                 href="https://github.com/TitanEkanayake/Messenger-Application"
                 rel="noopener noreferrer"
                 target="_blank"

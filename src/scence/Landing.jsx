@@ -58,14 +58,12 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            I am an energetic, self-motivated individual with a strong
-            foundation in software engineering principles. Through my skills, I
-            have gained valuable insights into industry-specific challenges
-            using various programming languages. Known for my trustworthiness,
-            responsibility, and hardworking nature, I possess exceptional
-            interpersonal skills and thrive in collaborative environments. I am
-            constantly seeking new opportunities in the software engineering
-            field to expand my knowledge and contribute to impactful projects.
+            I'm a Fresh Software Engineering graduate with a strong foundation
+            in various programming languages and databases. Completed an
+            internship focusing on Market Surveillance and Python Automation.
+            Seeking opportunities to apply my technical skills and contribute to
+            the software industry, with a keen interest in Software Development
+            and Web Development.
           </p>
         </motion.div>
 
